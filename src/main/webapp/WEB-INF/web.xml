@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0">
+    <servlet>
+        <servlet-name>InicioSesionServlet</servlet-name>
+        <servlet-class>com.example.horoscopochino.servlets.InicioSesionServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>InicioSesionServlet</servlet-name>
+        <url-pattern>/iniciarSesion</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>RegistroUsuarioServlet</servlet-name>
+        <servlet-class>com.example.horoscopochino.servlets.RegistroUsuarioServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegistroUsuarioServlet</servlet-name>
+        <url-pattern>/registrarUsuario</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>MostrarDatosServlet</servlet-name>
+        <servlet-class>com.example.horoscopochino.servlets.MostrarDatosServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MostrarDatosServlet</servlet-name>
+        <url-pattern>/mostrarDatos</url-pattern>
+    </servlet-mapping>
+</web-app>
